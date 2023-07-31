@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contacto | Japón</title>
+  <!--favicon-->
+  <link rel="shortcut icon" href="img/icon/favicon.ico" />
+  <!--Css-->
+  <link rel="stylesheet" href="css/style.css" />
+  <!--Font Awesome-->
+  <script src="https://kit.fontawesome.com/0fa7eea8bf.js" crossorigin="anonymous"></script>
+  <script src="js/menu.js"></script>
+</head>
+
+<body>
+  <header>
+    <div class="navbar" id="myNavbar">
+      <a class="logo" href="index.html"></a>
+      <a href="index.html">Home</a>
+      <a href="./gastronomia.html">Gastronomía</a>
+      <a href="./actividades.html">Actividades</a>
+      <a href="./form.html" class="active">Contactanos</a>
+      <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+        <i class="fa fa-bars"></i>
+      </a>
+    </div>
+  </header>
+  <main class="centeredText">
+    <h1>Contactanos</h1>
+    <p>
+      Si te queda alguna duda o necesitas más información sobre qué hacer en
+      Japón, no dudes en contactarnos!
+    </p>
+    <p>
+      Dejanos tus datos y te vamos a estar respondiendo lo mas pronto posible.
+    </p>
+
+    <section class="row">
+      <div class="column">
+        <img src="./img/form.jpg" alt="" width="200" height="200" class="mobileImg formImg">
+        <img src="./img/form.jpg" alt="" width="300" height="500" class="tabletImg formImg">
+        <img src="./img/form.jpg" alt="" width="300" height="500" class="desktopImg formImg">
+      </div>
+      <form action="./thanks.html" method="GET" enctype="multipart/form-data" class="column">
+        <!--NOMBRE-->
+        <div class="field">
+          <label for="nombre">Nombre</label>
+          <input type="text" name="nombre" id="nombre" placeholder="Nombre" required="required" />
+        </div>
+        <!--EMAIL-->
+        <div class="field centerForm">
+          <label for="email">Email</label>
+          <input type="email" name="email" id="email" placeholder="Email" required="required" />
+        </div>
+        <!--DATE-->
+        <div class="field centerForm">
+          <label for="date">Periodo de tu viaje</label>
+          <input id="date" type="date" name="date" min="1900-01-01" max="2024-12-01" />
+        </div>
+        <!--CHECKOX revisar-->
+        <div class="opcionesFormulario">
+          <p>
+            Elegi la ciudad de la que deseas recibir mas información (podes elegir mas de una opcion).
+          </p>
+
+          <div>
+            <label for="kioto" lang="ja">Kyōto</label>
+            <input type="checkbox" name="kioto" id="kioto" />
+          </div>
+
+          <div>
+            <label for="osaka" lang="ja">Ōsaka</label>
+            <input type="checkbox" name="osaka" id="osaka" />
+          </div>
+
+          <div>
+            <label for="sapporo" lang="ja">Saporro</label>
+            <input type="checkbox" name="sapporo" id="sapporo" />
+          </div>
+
+          <!-- <div>
+            <label for="okinawa" lang="ja">Okinawa</label>
+            <input type="checkbox" name="okinawa" id="okinawa" />
+          </div> -->
+
+          <div>
+            <label for="hiroshima" lang="ja">Hiroshima</label>
+            <input type="checkbox" name="hiroshima" id="hiroshima" />
+          </div>
+        </div>
+        <!--COMENTARIO-->
+        <div class="column">
+          <label for="comentario">Dejanos tu comentario</label>
+          <textarea name="comentario" id="comentario" placeholder="Comentario" cols="30" rows="10" required="required">
+                  </textarea>
+        </div>
+        <!--CHECKBOX-->
+        <div class="--text-center">
+          <label for="checkbox">¿Querés suscribirte a nuestro newsletter?</label>
+          <input id="checkbox" type="checkbox" name="newsletter" value="suscripto" checked />
+        </div>
+        <!--SUBIR ARCHIVO-->
+        <div>
+          <label for="archivo">Podes compartirnos una imagen de tu viaje y agregarla a nuestro perfil:</label>
+          <input type="file" id="archivo" name="archivo" />
+          <button class="button" type="button" onclick="document.getElementById('archivo').click();">Seleccionar
+            archivo</button>
+        </div>
+        <!--ENVIAR/ RESET-->
+        <div class="--text-center row">
+          <input class="button" type="submit" value="Enviar" />
+          <input class="button" type="reset" value="Restablecer" />
+        </div>
+      </form>
+    </section>
+  </main>
+  <footer>
+    <div class="row">
+      <section class="column">
+        <h2>La informacion se obtuvo de:</h2>
+        <ul>
+          <li>
+            <a href="https://japonismo.com/blog/8-razones-viajar-japon-en-primavera" target="_blank">Japonismo</a>
+          </li>
+          <li>
+            <a href="https://www.elespanol.com/cocinillas/reportajes-gastronomicos/20200217/tipos-comida-japonesa-platos-imprescindibles-probar-japon/466953591_0.html"
+              target="_blank">El Español</a>
+          </li>
+          <li>
+            <a href="https://www.mundo-nomada.com/blog/curiosidades-sobre-japon-20-cosas-que-quizas-no-sabias"
+              target="_blank">Mundo-nomada</a>
+          </li>
+          <li>
+            <a href="https://es.wikipedia.org/wiki/Jap%C3%B3n#:~:text=Jap%C3%B3n%20(en%20japon%C3%A9s%2C%20%E6%97%A5%E6%9C%AC%2C,el%20noroeste%20del%20oc%C3%A9ano%20Pac%C3%ADfico.&text=Jap%C3%B3n%20es%20el%20und%C3%A9cimo%20pa%C3%ADs,m%C3%A1s%20densamente%20poblados%20y%20urbanizados."
+              target="_blank">wikipedia</a>
+          </li>
+        </ul>
+      </section>
+      <section class="column">
+        <h2>Redes Sociales:</h2>
+
+        <ul class="redes">
+          <li>
+            <a href="https://es-la.facebook.com/" target="_blank">Facebook</a>
+          </li>
+          <li>
+            <a href="https://www.reddit.com/" target="_blank">Reddit</a>
+          </li>
+          <li>
+            <a href="https://twitter.com/" target="_blank">Twitter</a>
+          </li>
+        </ul>
+      </section>
+    </div>
+    <div class="row">
+      <div class="column --text-center">
+        <ul>
+          <li>Alumno: Barrios Daira</li>
+          <li>Profesora: Iglesias Pamela</li>
+        </ul>
+      </div>
+    </div>
+    <p class="centeredText bolded smallFont">2021 - DaVinci - Maquetado y Desarrollo Web - DWN1B</p>
+  </footer>
+</body>
+
+</html>

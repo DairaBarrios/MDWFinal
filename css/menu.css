@@ -1,0 +1,88 @@
+/* navbar */
+
+.navbar {
+    overflow: hidden;
+    text-transform: uppercase;
+}
+
+.navbar a {
+    float: left;
+    display: block;
+    color: black;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+    font-weight: 700;
+}
+
+.navbar a:hover {
+    background: #ddd;
+    color: black;
+}
+
+.navbar a.active {
+    color: #e51b11;
+    font-weight: bolder;
+}
+
+.navbar .icon {
+    display: none;
+}
+
+@media screen and (max-width: 1279px) {
+    .navbar a:not(:first-child) {
+        display: none;
+    }
+
+    .navbar a.icon {
+        float: right;
+        display: block;
+    }
+}
+
+@media screen and (max-width: 1279px) {
+    .navbar.responsive {
+        position: relative;
+        background-color: #f4eae2;
+    }
+
+    .navbar.responsive .icon {
+        position: absolute;
+        right: 0;
+        top: 0;
+    }
+
+    .navbar.responsive a {
+        float: none;
+        display: block;
+        text-align: left;
+    }
+}
+
+/* Logo */
+.logo {
+    background: url("../img/icon/torii-gate.png") no-repeat;
+    height: 24px;
+    width: 24px;
+    margin: 10px;
+}
+
+/*Banner*/
+.banner {
+    height: auto;
+    width: 100%;
+    margin: 0;
+}
+
+.banner-gas {
+    height: auto;
+    width: 100%;
+    margin: 0;
+}
+
+.banner-act {
+    height: auto;
+    width: 100%;
+    margin: 0;
+}

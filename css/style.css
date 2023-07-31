@@ -1,0 +1,425 @@
+@import url(menu.css);
+@import url(footer.css);
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
+
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+    text-decoration: none;
+    list-style: none;
+    font-size: 20px;
+}
+
+@media screen and (min-width: 768px) {
+    * {
+        font-weight: 4em;
+        font-size: 20px;
+    }
+}
+
+body {
+    margin: 0;
+    background-image: url(../img/fondo.jpg);
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    justify-content: space-between;
+}
+
+main {
+    max-width: 1024px;
+    margin: 17px auto;
+    background-color: #f4eae2;
+}
+
+@media screen and (min-width: 1280px) {
+    main {
+        max-width: 70%;
+    }
+}
+
+p {
+    line-height: 25px;
+    padding: 10px;
+}
+
+h1 {
+    text-align: center;
+    font-size: 40px;
+    color: #e51b11;
+    padding: 15px 0 10px 0;
+}
+
+h2 {
+    color: #000000;
+    text-align: center;
+    font-size: 30px;
+    padding-bottom: 25px;
+}
+
+h3 {
+    text-align: center;
+    color: #f1968f;
+    font-size: 25px;
+}
+
+section {
+    padding: 10px 0;
+}
+
+img {
+    height: auto;
+    width: 100%;
+}
+
+
+/* Imagenes */
+
+.centeredImg {
+    display: flex;
+    justify-content: center;
+}
+
+.mobileImg {
+    display: block;
+}
+
+.tabletImg {
+    display: none;
+}
+
+.desktopImg {
+    display: none;
+}
+
+@media screen and (min-width: 481px) {
+    .mobileImg {
+        display: none;
+    }
+
+    .tabletImg {
+        display: block;
+    }
+
+    .desktopImg {
+        display: none;
+    }
+}
+
+@media screen and (min-width: 1280px) {
+    .mobileImg {
+        display: none;
+    }
+
+    .tabletImg {
+        display: none;
+    }
+
+    .desktopImg {
+        display: block;
+    }
+}
+
+/*  DATOS / curiosidades */
+
+main>section>div>ul {
+    background-color: #656565;
+    margin: 30px auto;
+    padding: 30px 20px;
+    display: flex;
+    gap: 1em;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+
+main>section>div>ul>li {
+    margin: 0 20px;
+    max-width: 450px;
+    flex-grow: 1;
+}
+
+main>section>div>ul>li>p {
+    color: #ffffff;
+    text-transform: uppercase;
+    font-weight: bolder;
+}
+
+main>section>div>ul>li>p>span {
+    color: #f1968f;
+}
+
+@media screen and (min-width: 768px) {
+    main>section>div>ul {
+        flex-direction: row;
+    }
+}
+
+.curiosidades {
+    padding: 10px 50px;
+}
+
+.curiosidades>ul>li {
+    list-style-image: url("../img/icon/narutoMobile.png");
+    margin-bottom: 10px;
+}
+
+@media screen and (min-width: 768px) {
+    .curiosidades>ul>li {
+        list-style-image: url("../img/icon/narutoDesktop.png");
+    }
+
+    .curiosidades {
+        padding: 10px;
+    }
+}
+
+/*IFRAME*/
+div>iframe {
+    width: 100%;
+    border: none;
+}
+
+/* CARDS*/
+.cardContainer {
+    margin: 5%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    gap: 1em;
+    flex-wrap: wrap;
+    flex-direction: row;
+} 
+
+.card {
+    flex-basis: 100%;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    align-self: flex-start;
+}
+
+
+@media (min-width: 768px) {
+    .card {
+        flex-basis: 40%;
+        width: 40%;
+    }
+
+    .cardContainer {
+        flex-basis: calc(50% - 20px);
+        gap: 3.5em;
+    }
+}
+
+.cardPicture {
+    width: 100%;
+}
+
+.cardPicture > img {
+    width: 100%;
+}
+
+.cardText {
+    width: 100%;
+}
+
+.cardTitle {
+    width: 100%;
+    margin-top: 10px;
+}
+
+/* Forms */
+
+form>div{
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.formImg {
+    height: auto;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="date"] {
+    display: block;
+    width: 100%;
+    border: none;
+    border-bottom: 2px solid #000;
+    margin: 10px 0;
+    background-color: #f4eae2;
+}
+
+.opcionesFormulario {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.opcionesFormulario div {
+    flex: 1 0 48%;
+    margin: 10px 0;
+    display: flex;
+    justify-content: center;
+    align-content: space-around;
+}
+
+.opcionesFormulario div label{
+    padding-right: 5px;
+}
+
+.centerForm label {
+    white-space: nowrap;
+}
+
+
+input[type="file"] {
+    display: none;
+}
+
+button[type="button"] {
+    display: inline-block;
+    margin: 10px 0;
+}
+
+input[type="submit"],
+input[type="reset"] {
+    display: block;
+    margin: 10px auto;
+}
+
+.field {
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+label[for=checkbox] {
+    font-size: 16px;
+}
+
+@media screen and (min-width: 481px) and (max-width: 1279px) {
+    form {
+        margin-right: 50px;
+    }
+}
+
+
+@media screen and (min-width: 1280px) {
+
+    input[type="text"],
+    input[type="email"],
+    input[type="date"] {
+        width: 45%;
+        margin: 10px 2.5%;
+    }
+
+    .opcionesFormulario div {
+        flex: 1 0 40%;
+    }
+
+    button[type="button"] {
+        margin: 10px auto;
+        padding: 5px;
+    }
+
+    input[type="submit"],
+    input[type="reset"] {
+        padding: 5px;
+    }
+
+    .field {
+        flex-direction: row;
+        align-items: center;
+        justify-content: end;
+        width: 100%;
+    }
+
+    .field label {
+        margin-right: 10px;
+    }
+}
+
+/* Utils */
+.centeredText {
+    text-align: center;
+}
+
+.bolded {
+    font-weight: 900;
+}
+
+.smallFont {
+    font-size: small;
+}
+
+.row {
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    flex-wrap: wrap;
+    flex-direction: column;
+    width: 100%;
+    -webkit-box-align: stretch;
+    align-items: stretch;
+    margin: 20px 0;
+}
+
+
+@media screen and (min-width: 768px) {
+    .row {
+        flex-direction: row;
+    }
+
+    .reversedRow {
+        flex-direction: row-reverse;
+    }
+}
+
+.column {
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    flex-direction: column;
+    -webkit-box-flex: 1;
+    flex: 1;
+    -webkit-box-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    justify-content: space-between;
+    margin: 10px 0;
+}
+
+.centeredColumn {
+    justify-content: center;
+}
+
+.paddedColumn p {
+    width: 70%;
+
+}
+
+.button {
+    background-color: #f4eae2;
+    color: black;
+    border: 2px solid #f1968f;
+    border-radius: 4px;
+    transition-duration: 0.4s;
+    padding: 5px;
+  }
+  
+  .button:hover {
+    background-color: #f1968f;
+    color: black;
+  }
+
+/* Thanks */
+.thanks {
+    font-size: 30px;
+    font-weight: 900;
+}

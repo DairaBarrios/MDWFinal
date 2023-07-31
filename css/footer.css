@@ -1,0 +1,48 @@
+/*FOOTER*/
+footer {
+    background-color: #f1968f;
+    margin-top: 20px;
+}
+
+
+footer section>ul>li>a {
+    color: white;
+    text-decoration: none;
+    height: 500px;
+
+}
+
+.redes {
+    display: flex;
+    width: 140px;
+    -webkit-box-pack: justify;
+    justify-content: space-between;
+    margin: auto;
+    -webkit-box-align: start;
+    align-items: flex-start;
+}
+
+
+.redes>li>a {
+    display: block;
+    height: 32px;
+    width: 32px;
+    padding: 20px;
+    text-indent: -10000px;
+}
+
+a[href*="facebook"] {
+    background: url("../img/icon/sprites.png") no-repeat center center;
+    background-position: -5px -5px;
+}
+
+a[href*="reddit"] {
+    background: url("../img/icon/sprites.png") no-repeat center center;
+    background-position: -47px -5px;
+}
+
+a[href*="twitter"] {
+    background: url("../img/icon/sprites.png") no-repeat center center;
+    background-position: -5px -47px;
+}
+
